@@ -1,5 +1,6 @@
-About:
-------
+# About:
+
+*Note:* This is _marvnet's_ enhanced fork of eschalot, which includes some neat improvements like coloring of outputs. It also provides binaries (see Releases) to download ready-built versions. Thank you!
 
 Eschalot is a TOR hidden service name generator, it allows one to produce
 a (partially) customized vanity .onion address using a brute-force method.
@@ -26,8 +27,7 @@ some were fixed, some are still there - see TODO list if interested.
 
 
 
-Compilation:
-------------
+# Compilation:
 
 Eschalot requires OpenSSL-0.9.7-or-later libraries with source headers.
 
@@ -76,8 +76,7 @@ To cleanup everything execute
 
 
 
-Example output from 'make test':
---------------------------------
+# Example output from 'make test':
 
 $ make test
 cc -std=c99 -O2 -fPIC -finline-functions -Wall -W -Wunused -pedantic -Wpointer-arith  -Wreturn-type -Wstrict-prototypes  -Wmissing-prototypes -Wshadow -Wcast-qual -Wextra -o eschalot eschalot.c -lpthread -lssl -lcrypto
@@ -123,8 +122,7 @@ Found a key for pooryear (8) - pooryearxutsizhe.onion
 
 
 
-Usage:
-------
+# Usage:
 
 Type
 	$ ./eschalot
@@ -162,8 +160,7 @@ redirecting the results to a file:
 
 
 
-Generating a wordlist:
-----------------------
+# Generating a wordlist:
 
 You can use the included utility "worgen" to generate large wordlists for
 eschalot. This utility is far from complete and is not very user friendly,
@@ -228,8 +225,7 @@ junk or extremely uncommon words combinations in it. Experiment with it! :)
 
 
 
-Security of generated keys:
----------------------------
+# Security of generated keys:
 
 Original note from Shallot:
 
@@ -262,8 +258,7 @@ shallot-generated keys for years. I would not worry about it.
 
 
 
-Performance:
-------------
+# Performance:
 
 Depends on how fast your CPU is and how many cores you have, but generally
 speaking it's a bit faster than shallot. Up to twice as fast in some cases,
@@ -281,8 +276,7 @@ getting converted into binary format and stored in a sort of a hashed tree).
 
 
 
-Compilation Troubleshooting:
-----------------------------
+# Compilation Troubleshooting:
 
 1). Does the error message you are getting give you any hints?
 
