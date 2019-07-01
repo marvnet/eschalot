@@ -839,6 +839,7 @@ void
 usage(void)
 {
 	fprintf(stderr,
+	    ANSI_COLOR_BLUE
 	    "Version: %s\n"
 	    "\n"
 	    "usage:\n"
@@ -859,6 +860,7 @@ usage(void)
 	    VERSION, __progname, __progname, __progname, __progname);
 
 	fprintf(stderr,
+	    ANSI_COLOR_RED
 	    "  base32 alphabet allows letters [a-z] and digits [2-7]\n"
 	    "  Regex pattern examples:\n"
 	    "    xxx           must contain 'xxx'\n"
@@ -880,7 +882,7 @@ verbose(char *message, ...)
 	va_list	ap;
 
 	va_start(ap, message);
-	vfprintf(stderr, message, ap);
+	vfprintf(stderr, ANSI_COLOR_YELLOW message, ap);
 	va_end(ap);
 	fflush(stderr);
 }
@@ -899,8 +901,8 @@ error(char *message, ...)
 	va_list	ap;
 
 	va_start(ap, message);
-	fprintf(stderr, "ERROR: ");
-	vfprintf(stderr, message, ap);
+	fprintf(stderr, ANSI_COLOR_RED "ERROR: ");
+	vfprintf(stderr, ANSI_COLOR_RED message, ap);
 	va_end(ap);
 	exit(1);
 }
