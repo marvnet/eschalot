@@ -1,6 +1,6 @@
 # About:
 
-*Note:* This is _marvnet's_ enhanced fork of eschalot, which includes some neat improvements like coloring of outputs. It also provides binaries (see Releases) to download ready-built versions. Thank you!
+**Note:** This is _marvnet's_ enhanced fork of **eschalot**, which includes some neat improvements like coloring of outputs. It also provides binaries (see Releases) to download ready-built versions. Thank you!
 
 Eschalot is a TOR hidden service name generator, it allows one to produce
 a (partially) customized vanity .onion address using a brute-force method.
